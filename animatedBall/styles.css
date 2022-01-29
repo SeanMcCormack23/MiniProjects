@@ -1,0 +1,31 @@
+body { 
+  background-color: hotpink;
+  text-align: center;
+}
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ball {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: linear-gradient(
+    -50deg,
+    rgb(184, 216, 4),
+    rgb(166, 255, 0),
+    rgb(236, 13, 150),
+    rgb(15, 196, 228))
+  ;
+  animation-name: change;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+}
+@keyframes change {
+    50%{
+      width:300px;
+      height: 300px;
+    }
+}
