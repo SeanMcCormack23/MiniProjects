@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <body>
+      <main>
+        <header>
+          <h1 id="title">Bike Riders Survey</h1>
+          <p id="description">I'm collecting data on the kinds of bikes people are riding. Thanks for your help.</p>
+        </header>
+    <section>
+      <form id="survey-form">
+        <fieldset>
+        <label id="name-label" class="headings" >Name
+        <input id="name" type="text" placeholder="Enter your name" required/> </label>
+        <label id="email-label" class="headings">Email
+        <input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label" class="headings">Age
+        <input type="number" id="number" placeholder="Age" min= "13" max="120"/></label>
+      </fieldset>
+
+        <!-- 12 -->
+        <fieldset id="wheelSize">
+          <label class="headings"> What size wheels do you have?
+        <select id="dropdown"> 
+          <option>Pick a size</option>
+          <option>26"</option>
+          <option>27.5"</option>
+          <option>29"</option>
+          </select>
+        </label>
+        </fieldset>
+
+
+          <!-- 13 -->
+          <fieldset>
+            <legend class="headings">What kind of bike do you have?</legend>
+              <label> <input type="radio" name="bikeSelected" class="inline" /> Hardtail</label>
+              <label> <input type="radio" name="bikeSelected" class="inline"  /> Full Suspension</label>
+              <label> <input type="radio" name="bikeSelected" class="inline"  /> Both </label>
+
+              </label>
+          </fieldset>
+
+
+          <!-- 14 -->
+          <fieldset id="training">
+            <legend class="headings">What skills are you working on currently?</legend>
+          
+            <label> <input type="checkbox"  name="Wheelies" class="inline"  /> Wheelies</label>
+            <label> <input type="checkbox" name="Manuals" class="inline" /> Manuals</label>
+            <label> <input type="checkbox" name="Jumps" class="inline" /> Jumps </label>
+            <label> <input type="checkbox" name="Barspins" class="inline" />Barspins</label>
+            <label> <input type="checkbox" name="Endurance" class="inline" />Endurance Training </label>
+            <label> <input type="checkbox" name="Flairs" class="inline" />Flairs </label>
+            <label> <input type="checkbox" name="Backflips" class="inline" />Backflips
+            </label>
+          </fieldset>
+
+
+          <fieldset>
+            <label class="headings">Feel free to add any thoughts you have on the cycling community here, please be friendly :)
+              <textarea id="thoughts" placeholder="Please type here..."></textarea></label>
+          </fieldset>
+
+      <button type="submit" id="submit" value="Submit">Submit</button>
+
+      </form>
+    </section>
+    </main>
+    </body>
+  </head>
+</html>
